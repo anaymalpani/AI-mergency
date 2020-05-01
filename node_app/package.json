@@ -26,7 +26,9 @@
   "scripts": {
     "start": "node app.js",
     "lint": "eslint .",
-    "autofix": "eslint --fix ."
+    "autofix": "eslint --fix .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@google-cloud/speech": "^2.0.0",
@@ -66,7 +68,8 @@
     "throttle": "^1.0.3",
     "uglifyify": "^5.0.1",
     "watson-developer-cloud": "^3.7.0",
-    "whatwg-fetch": "^2.0.4"
+    "whatwg-fetch": "^2.0.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "casperjs": "^1.1.4",
@@ -80,5 +83,6 @@
     "nock": "^9.4.2",
     "phantomjs-prebuilt": "^2.1.16",
     "supertest": "^3.1.0"
-  }
+  },
+  "snyk": true
 }
